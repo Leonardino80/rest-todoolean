@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <title>rest-todoolean</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_left">
+        <h1>To do List!</h1>
+      </div>
+      <div class="header_right">
+        <input type="text" id="request">
+        <button id="to_do_button">Aggiungi una cosa da fare</button>
+      </div>
+    </header>
+
+    <div class="container">
+    </div>
+
+    <script id="template_scheda" type="text/x-handlebars-template">
+      <div class="scheda" data-id="{{number}}">
+        <i class="fas fa-pencil-alt"></i><i class="fas fa-trash-alt"> - {{number}}) </i><span>{{todo}}<span>
+      </div>
+    </script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
